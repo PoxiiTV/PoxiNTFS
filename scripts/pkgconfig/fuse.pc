@@ -1,0 +1,10 @@
+# Alias para que ntfs-3g encuentre FUSE-T (API FUSE 2) como "fuse".
+prefix=/usr/local
+libdir=${prefix}/lib
+includedir=${prefix}/include/fuse
+
+Name: fuse
+Description: FUSE-T, presentado como fuse
+Version: 2.9.9
+Libs: -L${libdir} -Wl,-rpath,${libdir} -lfuse-t
+Cflags: -I${includedir} -D_FILE_OFFSET_BITS=64
