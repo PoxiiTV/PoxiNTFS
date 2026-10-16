@@ -4,7 +4,6 @@
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
-SDK=/Library/Developer/CommandLineTools/SDKs/MacOSX26.5.sdk
 NTFS="$HOME/.poxintfs/ntfs-3g"
 APP=build/PoxiNTFS.app
 
@@ -24,7 +23,7 @@ done
 install_name_tool -id "$LIB" "$APP/Contents/Resources/ntfs-3g/lib/libntfs-3g.91.dylib"
 
 # Icono
-swiftc -sdk "$SDK" -target arm64-apple-macosx14.0 scripts/make-icon.swift -o build/make-icon
+swiftc -target arm64-apple-macosx14.0 scripts/make-icon.swift -o build/make-icon
 ./build/make-icon build/icon-1024.png
 mkdir build/icon.iconset
 for s in 16 32 128 256 512; do

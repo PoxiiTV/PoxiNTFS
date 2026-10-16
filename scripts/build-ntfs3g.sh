@@ -8,7 +8,6 @@ SRC="$1"
 PREFIX="$2"
 
 export PATH="/opt/homebrew/bin:/opt/homebrew/opt/libtool/libexec/gnubin:/opt/homebrew/opt/gettext/bin:$PATH"
-export SDKROOT=/Library/Developer/CommandLineTools/SDKs/MacOSX26.5.sdk
 HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 export PKG_CONFIG_PATH="$HERE/pkgconfig:/usr/local/lib/pkgconfig:/opt/homebrew/lib/pkgconfig"
 export CFLAGS="-O2 -I/usr/local/include/fuse"
