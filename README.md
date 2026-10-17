@@ -4,7 +4,7 @@
 
 <br />
 
-![Versión](https://img.shields.io/badge/versión-0.1.0%20beta-ffce3a?style=flat-square&labelColor=0a111f)
+![Versión](https://img.shields.io/badge/versión-0.1.0-ffce3a?style=flat-square&labelColor=0a111f)
 ![Plataforma](https://img.shields.io/badge/macOS-14%2B%20·%20Apple%20Silicon-60a5fa?style=flat-square&labelColor=0a111f)
 ![Motor](https://img.shields.io/badge/motor-ntfs--3g%202026.9.28-34d399?style=flat-square&labelColor=0a111f)
 ![FUSE-T](https://img.shields.io/badge/sin%20kext-FUSE--T-fb923c?style=flat-square&labelColor=0a111f)
@@ -83,8 +83,8 @@ brew install --cask fuse-t
 
 ## ⚠️ Avisos
 
-- 🧪 **Es una beta.** Se ha probado a fondo con discos NTFS virtuales, todavía poco con discos físicos.
-  Haz copia de lo importante antes de escribir en un disco.
+- 💾 Está probada a fondo con discos NTFS virtuales. Antes de escribir en un disco físico con datos que te
+  importen, haz una copia.
 - 🔑 Pide la **contraseña del Mac cada vez** que activas la escritura: montar un disco necesita permisos de administrador.
 - 💤 Si el disco viene de un Windows con **Inicio rápido**, apágalo del todo con **Mayús + Apagar** antes de conectarlo al Mac.
 - 🐢 Va por FUSE, así que es algo más lento que los drivers de pago para archivos muy grandes.
@@ -164,7 +164,7 @@ Install FUSE-T first: `brew install --cask fuse-t`.
 
 ## ⚠️ Notices
 
-- 🧪 **Beta**: thoroughly tested with virtual NTFS disks, still lightly with physical ones. Back up first.
+- 💾 Thoroughly tested with virtual NTFS disks. Back up important data before writing to a physical drive.
 - 🔑 Asks for your **Mac password every time** you enable writing.
 - 🍎 **Apple Silicon** and macOS 14+ only for now.
 

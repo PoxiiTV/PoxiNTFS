@@ -1,6 +1,6 @@
 # Novedades
 
-## 0.1.0 · primera beta
+## 0.1.0 · primera versión
 
 - Detecta los discos NTFS conectados y muestra si están en solo lectura o con escritura.
 - **Activar escritura**: suelta el montaje de solo lectura de macOS y monta el disco con ntfs-3g y FUSE-T.
